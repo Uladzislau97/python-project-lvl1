@@ -1,2 +1,4 @@
 .python-version
-uladzislau97_brain_games.egg-info/
+*.egg-info
+__pycache__
+dist/
