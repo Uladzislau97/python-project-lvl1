@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-import prompt
+from brain_games.cli import run
 
 def main():
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
+    run()
 
 
 if __name__ == '__main__':
