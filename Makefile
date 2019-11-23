@@ -1,17 +1,17 @@
 install:
-	poetry install
+	@poetry install
 
 build: clear
-	poetry build
+	@poetry build
 
 publish: build
 	twine upload --repository testpypi dist/* --config-file .pypirc
 
 run:
-	poetry run brain-games
+	@poetry run brain-games
 
 clear:
 	if [ -d "dist" ]; then rm -r dist; fi
 
 lint:
-	poetry run flake8 brain_games
+	@poetry run flake8 brain_games
