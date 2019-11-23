@@ -12,3 +12,6 @@ run:
 
 clear:
 	if [ -d "dist" ]; then rm -r dist; fi
+
+lint:
+	poetry run flake8 brain_games
