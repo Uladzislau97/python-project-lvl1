@@ -7,8 +7,10 @@ build: clear
 publish: build
 	twine upload --repository testpypi dist/* --config-file .pypirc
 
+GAME = games
+
 run:
-	@poetry run brain-games
+	@poetry run brain-$(GAME)
 
 clear:
 	if [ -d "dist" ]; then rm -r dist; fi
