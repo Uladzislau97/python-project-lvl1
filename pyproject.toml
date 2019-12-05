@@ -1,15 +1,34 @@
 [tool.poetry]
 name = "uladzislau97_brain_games"
-version = "1.0.0"
-description = ""
+version = "1.0.1"
+description = "A set of console mini-games."
 authors = ["Uladzislau Vasilyeu <VSvasilyev97@gmail.com>"]
+readme = "README.md"
+python = "^3.7"
+homepage = "https://github.com/Uladzislau97/python-project-lvl1"
+repository = "https://github.com/Uladzislau97/python-project-lvl1"
+documentation = "https://github.com/Uladzislau97/python-project-lvl1"
+
 packages = [
   { include = "brain_games" },
 ]
 
+keywords = [
+    "brain game",
+    "brain games",
+    "console game",
+    "console games"
+]
+
+classifiers = [
+    "Topic :: Software Development"
+]
+
 [tool.poetry.dependencies]
-python = "^3.7"
 prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
@@ -19,8 +38,6 @@ brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 
-[tool.poetry.dev-dependencies]
-flake8 = "^3.7"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
