@@ -5,6 +5,8 @@
 ##### A set of console mini-games.
 #
 ##### INSTALLATION
-[![asciicast](https://asciinema.org/a/fddCjlPXUQ3cTUfnI7p0LczbM.svg)](https://asciinema.org/a/fddCjlPXUQ3cTUfnI7p0LczbM)
+[![asciicast](https://asciinema.org/a/xq3prz8YOECzIHTgZzrixvW0y.svg)](https://asciinema.org/a/xq3prz8YOECzIHTgZzrixvW0y)
 ##### BRAIN-EVEN
 [![asciicast](https://asciinema.org/a/frhE8ZbjJ7flvtrrMLV88mUub.svg)](https://asciinema.org/a/frhE8ZbjJ7flvtrrMLV88mUub)
+##### BRAIN-CALC
+[![asciicast](https://asciinema.org/a/gYuQyqsZaATuFemEYl9kKSrTr.svg)](https://asciinema.org/a/gYuQyqsZaATuFemEYl9kKSrTr)
