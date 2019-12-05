@@ -1,5 +1,5 @@
-import random
+from random import randint
 
 
 def generate_random_number(min=1, max=100):
-    return random.randint(min, max)
+    return randint(min, max)
