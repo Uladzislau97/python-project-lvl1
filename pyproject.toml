@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "uladzislau97_brain_games"
-version = "0.6.0"
+version = "1.0.0"
 description = ""
 authors = ["Uladzislau Vasilyeu <VSvasilyev97@gmail.com>"]
 packages = [
@@ -17,6 +17,7 @@ brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"
