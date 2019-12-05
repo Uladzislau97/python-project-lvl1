@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "uladzislau97_brain_games"
-version = "0.3.1"
+version = "0.4.0"
 description = ""
 authors = ["Uladzislau Vasilyeu <VSvasilyev97@gmail.com>"]
 packages = [
@@ -14,6 +14,7 @@ prompt = "^0.4.1"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 
 [tool.poetry.dev-dependencies]
