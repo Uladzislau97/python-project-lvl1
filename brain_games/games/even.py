@@ -1,7 +1,7 @@
 from brain_games.game_engine import run_game
 from brain_games.utils import generate_random_number
 
-game_description = 'Answer "yes" if number even otherwise answer "no".'
+GAME_DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def is_even(number):
@@ -18,4 +18,4 @@ def generate_task():
 
 
 def run_brain_even_game():
-    run_game(game_description, generate_task)
+    run_game(GAME_DESCRIPTION, generate_task)

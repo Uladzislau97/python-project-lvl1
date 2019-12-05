@@ -1,10 +1,10 @@
 import prompt
 
-max_number_of_questions = 3
+MAX_NUMBER_OF_QUESTIONS = 3
 
 
 def ask_question(generate_task, question_number=1):
-    if (question_number > max_number_of_questions):
+    if (question_number > MAX_NUMBER_OF_QUESTIONS):
         return {"is_victory": True}
 
     task_data = generate_task()

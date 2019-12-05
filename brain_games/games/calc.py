@@ -1,9 +1,9 @@
 from brain_games.game_engine import run_game
 from brain_games.utils import generate_random_number
 
-min_sign_index = 0
-max_sign_index = 2
-game_description = "What is the result of the expression?"
+MIN_SIGN_INDEX = 0
+MAX_SIGN_INDEX = 2
+GAME_DESCRIPTION = "What is the result of the expression?"
 
 arithmetic_signs = ["+", "-", "*"]
 arithmetic_operations_by_sign = {
@@ -14,7 +14,7 @@ arithmetic_operations_by_sign = {
 
 
 def generate_random_arithmetic_sign():
-    random_index = generate_random_number(min_sign_index, max_sign_index)
+    random_index = generate_random_number(MIN_SIGN_INDEX, MAX_SIGN_INDEX)
     return arithmetic_signs[random_index]
 
 
@@ -32,4 +32,4 @@ def generate_task():
 
 
 def run_brain_calc_game():
-    run_game(game_description, generate_task)
+    run_game(GAME_DESCRIPTION, generate_task)

@@ -2,7 +2,7 @@ from brain_games.game_engine import run_game
 from brain_games.utils import generate_random_number
 from math import gcd
 
-game_description = "Find the greatest common divisor of given numbers."
+GAME_DESCRIPTION = "Find the greatest common divisor of given numbers."
 
 
 def generate_task():
@@ -17,4 +17,4 @@ def generate_task():
 
 
 def run_brain_gcd_game():
-    run_game(game_description, generate_task)
+    run_game(GAME_DESCRIPTION, generate_task)
