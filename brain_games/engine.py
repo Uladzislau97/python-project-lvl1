@@ -3,26 +3,27 @@ import prompt
 MAX_NUMBER_OF_QUESTIONS = 3
 
 
-def ask_question(generate_task, question_number=1):
-    if (question_number > MAX_NUMBER_OF_QUESTIONS):
-        return {"is_victory": True}
+def ask_question(generate_task):
+    question_number = 1
+    while question_number <= MAX_NUMBER_OF_QUESTIONS:
+        task_data = generate_task()
+        question = task_data["question"]
+        correct_answer = task_data["correct_answer"]
 
-    task_data = generate_task()
-    question = task_data["question"]
-    correct_answer = task_data["correct_answer"]
+        print("Question: {}".format(question))
+        given_answer = prompt.string("Your answer: ")
 
-    print("Question: {}".format(question))
-    given_answer = prompt.string("Your answer: ")
+        if (given_answer != correct_answer):
+            return {
+                "is_victory": False,
+                "given_answer": given_answer,
+                "correct_answer": correct_answer
+            }
 
-    if (given_answer != correct_answer):
-        return {
-            "is_victory": False,
-            "given_answer": given_answer,
-            "correct_answer": correct_answer
-        }
+        print("Correct!")
+        question_number += 1
 
-    print("Correct!")
-    return ask_question(generate_task, question_number + 1)
+    return {"is_victory": True}
 
 
 def run(game):
