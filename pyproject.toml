@@ -4,7 +4,7 @@ version = "1.0.2"
 description = "A set of console mini-games."
 authors = ["Uladzislau Vasilyeu <VSvasilyev97@gmail.com>"]
 readme = "README.md"
-python = "^3.7"
+python = ">=3.6"
 homepage = "https://github.com/Uladzislau97/python-project-lvl1"
 repository = "https://github.com/Uladzislau97/python-project-lvl1"
 documentation = "https://github.com/Uladzislau97/python-project-lvl1"
