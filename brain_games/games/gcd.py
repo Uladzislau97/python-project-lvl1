@@ -1,7 +1,14 @@
 from brain_games.utils import generate_random_number
-from math import gcd
 
 GAME_DESCRIPTION = "Find the greatest common divisor of given numbers."
+
+
+def gcd(a, b):
+    if a == 0:
+        return b
+    if b == 0:
+        return a
+    return gcd(a % b, b) if a >= b else gcd(a, b % a)
 
 
 def generate_task():
