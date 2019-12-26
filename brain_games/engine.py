@@ -25,12 +25,12 @@ def ask_question(generate_task, question_number=1):
     return ask_question(generate_task, question_number + 1)
 
 
-def run_game(game_description, generate_task):
+def run(game):
     print("Welcome to the Brain Games!")
-    print(game_description + "\n")
+    print(game.GAME_DESCRIPTION + "\n")
     name = prompt.string("May I have your name? ")
     print("Hello, {}!\n".format(name))
-    game_result = ask_question(generate_task)
+    game_result = ask_question(game.generate_task)
     if game_result["is_victory"]:
         print("Congratulations, {}!".format(name))
     else:

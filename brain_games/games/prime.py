@@ -1,4 +1,3 @@
-from brain_games.game_engine import run_game
 from brain_games.utils import generate_random_number
 from math import floor, sqrt
 
@@ -27,7 +26,3 @@ def generate_task():
         "question": question,
         "correct_answer": correct_answer
     }
-
-
-def run_brain_prime_game():
-    run_game(GAME_DESCRIPTION, generate_task)
