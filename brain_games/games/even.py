@@ -10,7 +10,4 @@ def is_even(number):
 def generate_task():
     question = generate_random_number()
     correct_answer = "yes" if is_even(question) else "no"
-    return {
-        "question": question,
-        "correct_answer": correct_answer
-    }
+    return (question, correct_answer)

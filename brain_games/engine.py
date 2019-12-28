@@ -14,14 +14,12 @@ def run(game):
 
     question_number = 1
     while question_number <= MAX_NUMBER_OF_QUESTIONS:
-        task_data = game.generate_task()
-        question = task_data["question"]
-        correct_answer = task_data["correct_answer"]
+        question, correct_answer = game.generate_task()
 
         print("Question: {}".format(question))
         given_answer = prompt.string("Your answer: ")
 
-        if (given_answer != correct_answer):
+        if given_answer != correct_answer:
             result = "'{}' is wrong answer ;(. Correct answer was '{}'."
             print(result.format(given_answer, correct_answer))
             return

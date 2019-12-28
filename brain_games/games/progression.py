@@ -28,7 +28,4 @@ def generate_task():
 
     correct_answer = str(sequence[hidden_element_index])
     question = " ".join(list(map(str, sequence_with_hidden_element)))
-    return {
-        "question": question,
-        "correct_answer": correct_answer
-    }
+    return (question, correct_answer)

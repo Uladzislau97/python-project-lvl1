@@ -4,11 +4,15 @@ GAME_DESCRIPTION = "Find the greatest common divisor of given numbers."
 
 
 def gcd(a, b):
+    while a != 0 and b != 0:
+        if a >= b:
+            a = a % b
+        else:
+            b = b % a
     if a == 0:
         return b
     if b == 0:
         return a
-    return gcd(a % b, b) if a >= b else gcd(a, b % a)
 
 
 def generate_task():
@@ -16,7 +20,4 @@ def generate_task():
     second_num = generate_random_number()
     question = "{} {}".format(first_num, second_num)
     correct_answer = str(gcd(first_num, second_num))
-    return {
-        "question": question,
-        "correct_answer": correct_answer
-    }
+    return (question, correct_answer)
