@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "uladzislau97_brain_games"
-version = "1.0.3"
+version = "1.0.4"
 description = "A set of console mini-games."
 authors = ["Uladzislau Vasilyeu <VSvasilyev97@gmail.com>"]
 readme = "README.md"
